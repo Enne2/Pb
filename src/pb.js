@@ -56,6 +56,8 @@ PB.prototype.render = function render() {
     this.node.innerHTML = '';
     this.components.info = new Info(this.data);
     this.node.appendChild(this.components.info.node);
+    this.data.entries = this.data.entries.reverse();
+    console.log(this.data.entries);
     for (var i = 0; i < limit; i++) {
         entry = new Entry(this.data.entries[i]);
         this.components.entries.push(entry);

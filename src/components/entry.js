@@ -1,6 +1,7 @@
 
 var create      = require('../utils/create'),
-    Player      = require('./player');
+    Player      = require('./player'),
+    Artwork     = require('./artwork');
 
 module.exports = Entry;
 /**
@@ -19,6 +20,10 @@ function Entry(data) {
     });
     this.components = {};
 
+    this.components.artwork = new Artwork(data);
+    this.node.appendChild(this.components.artwork.node);
+
+
     this.components.player = new Player(data);
     this.components.title = this.node.appendChild(create('h3', {
         className:      'pb-embed--entry-title'
@@ -35,10 +40,8 @@ function Entry(data) {
         innerHTML:      data.content,
         className:      'pb-embed--entry-description'
     }));
-    this.components.title.appendChild(create('a', {
+    this.components.title.appendChild(create('span', {
         textContent:    data.title,
-        href:           data.link,
-        target:         '_blank',
         className:      'pb-embed--entry-link'
     }));
 
