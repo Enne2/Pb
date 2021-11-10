@@ -1,6 +1,11 @@
 # Pb
 This is a library that allows you to embed a podcast in your web page.
 
+# Enne2's customizations
+- Reversed Episode order
+- added episode image view
+- removed printing of title and other infos of the podcast feed
+
 ## Features
 - Provide a podcast URL, see a podcast rendered
 - Total library size is `~4.5kb`

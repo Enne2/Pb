@@ -1,26 +1,26 @@
 {
-  "name": "pb",
+  "name": "pb-better",
   "version": "1.0.0",
-  "description": "Podcast embedding library",
+  "description": "A better podcast embedding library",
   "main": "bundle.js",
   "scripts": {
     "build": "browserify -t [ uglifyify ] src/main.js -o bundle.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NarroApp/Pb.git"
+    "url": "git+https://github.com/Enne2/Pb.git"
   },
   "keywords": [
     "podcast",
     "embed",
     "player"
   ],
-  "author": "andjosh",
+  "author": "andjosh, enne2",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NarroApp/Pb/issues"
+    "url": "https://github.com/Enne2/Pb/issues"
   },
-  "homepage": "https://github.com/NarroApp/Pb#readme",
+  "homepage": "https://github.com/Enne2/Pb#readme",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/preset-env": "^7.15.8",
